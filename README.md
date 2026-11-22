@@ -52,7 +52,7 @@ project-root/
 ## Quickstart (PowerShell)
 
 ```powershell
-cd "E:\certificates\365datascience\AI Agent Engineer\AI Agents in Practice\Section 3\project"
+cd path\to\jobmatch
 uv sync --inexact
 Copy-Item .env.example .env
 # open .env in an editor and replace your_key_here with your Gemini key
