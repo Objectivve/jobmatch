@@ -1,0 +1,15 @@
+fastapi
+google-genai
+httpx
+langchain
+langchain-google-genai
+langgraph
+langgraph-checkpoint-sqlite
+langsmith
+pdfplumber
+pydantic
+pytest
+python-docx
+python-dotenv
+typing-extensions
+uvicorn

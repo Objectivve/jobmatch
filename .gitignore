@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+data/*.sqlite
+data/*.sqlite3
+data/*.db
+reports/
+*_resume.pdf
+*_cv.pdf
+
+!data/sample_cv.pdf
+
+!data/sample_cv.pdf

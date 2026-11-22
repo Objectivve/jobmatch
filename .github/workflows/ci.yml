@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-and-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: Install dependencies from lockfile
+        run: uv sync --frozen
+      - name: Offline unit and integration tests
+        run: uv run python -m pytest -q
+      - name: Offline golden-set evaluation
+        run: uv run python -m jobmatch.evals.run --backend fake --strict --out-dir reports
+      - name: Upload evaluation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-report
+          path: reports/
+          if-no-files-found: ignore

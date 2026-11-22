@@ -1,0 +1,28 @@
+[
+  {
+    "rubric_id": "rubric-langgraph-001",
+    "role": "AI / LLM Engineer - Agentic Orchestration",
+    "domain": "ai_engineering",
+    "seniority_level": "junior_to_mid",
+    "source_type": "curated_role_rubric",
+    "verified_flag": true,
+    "effective_date": "2026-11-01",
+    "version": 1,
+    "required_skills": ["Python", "LangGraph", "RAG", "evaluation", "API integration"],
+    "nice_to_have": ["LiteLLM", "vector search", "Arabic NLP"],
+    "grounding_rule": "Only claim a skill when it appears in the CV text or job summary."
+  },
+  {
+    "rubric_id": "rubric-ml-002",
+    "role": "AI/ML Engineer",
+    "domain": "machine_learning",
+    "seniority_level": "mid",
+    "source_type": "curated_role_rubric",
+    "verified_flag": true,
+    "effective_date": "2026-10-15",
+    "version": 1,
+    "required_skills": ["Python", "SQL", "TensorFlow or PyTorch", "model evaluation"],
+    "nice_to_have": ["MLOps", "Docker", "cloud deployment"],
+    "grounding_rule": "Academic projects count as evidence only when named in the CV."
+  }
+]
